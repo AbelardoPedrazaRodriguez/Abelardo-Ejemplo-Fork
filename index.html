@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mi página personal">
+  <title>Mi perfil personal</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f5f1;
+      color: #263044;
+    }
+
+    * { box-sizing: border-box; }
+
+    body { margin: 0; }
+
+    .pagina {
+      width: min(100% - 32px, 900px);
+      margin: 48px auto;
+    }
+
+    .perfil {
+      overflow: hidden;
+      border-radius: 24px;
+      background: white;
+      box-shadow: 0 18px 45px rgba(38, 48, 68, .10);
+    }
+
+    .encabezado {
+      padding: 48px;
+      background: linear-gradient(125deg, #4664a9, #8264b4);
+      color: white;
+    }
+
+    .avatar {
+      display: grid;
+      place-items: center;
+      width: 78px;
+      height: 78px;
+      margin-bottom: 20px;
+      border: 2px solid rgba(255, 255, 255, .75);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .17);
+      font-size: 29px;
+      font-weight: bold;
+    }
+
+    h1 { margin: 0 0 8px; font-size: clamp(32px, 6vw, 48px); }
+    .subtitulo { margin: 0; font-size: 18px; line-height: 1.5; }
+
+    .contenido { padding: 36px 48px 48px; }
+    section + section { margin-top: 30px; }
+    h2 { margin: 0 0 10px; color: #4664a9; font-size: 21px; }
+    p { margin: 0; line-height: 1.7; }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .tarjeta {
+      padding: 16px;
+      border-radius: 14px;
+      background: #f2f3fa;
+      line-height: 1.5;
+    }
+
+    footer {
+      padding: 20px 48px;
+      border-top: 1px solid #ececf2;
+      color: #667085;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .pagina { margin: 16px auto; }
+      .encabezado, .contenido { padding: 28px; }
+      .tarjetas { grid-template-columns: 1fr; }
+      footer { padding: 20px 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="pagina">
+    <article class="perfil">
+      <header class="encabezado">
+        <!-- CAMBIA LAS INICIALES Y EL TEXTO DE ABAJO. NO BORRES LAS ETIQUETAS. -->
+        <div class="avatar" aria-hidden="true">TN</div>
+        <h1>Tu Nombre</h1>
+        <p class="subtitulo">Estudiante con ganas de aprender y crear cosas nuevas.</p>
+      </header>
+
+      <div class="contenido">
+        <section>
+          <!-- CAMBIA SOLO EL TEXTO ENTRE <p> Y </p>. -->
+          <h2>Sobre mí</h2>
+          <p>Hola, soy estudiante y me gusta descubrir cómo funciona la tecnología. Esta es mi primera página publicada en internet.</p>
+        </section>
+
+        <section>
+          <!-- CAMBIA EL TEXTO DE CADA TARJETA. -->
+          <h2>Mis intereses</h2>
+          <div class="tarjetas">
+            <div class="tarjeta">🎨 Me gusta dibujar y diseñar.</div>
+            <div class="tarjeta">🎵 Disfruto escuchar música.</div>
+            <div class="tarjeta">💻 Quiero aprender programación.</div>
+          </div>
+        </section>
+
+        <section>
+          <!-- CAMBIA SOLO EL TEXTO ENTRE <p> Y </p>. -->
+          <h2>Mi meta</h2>
+          <p>Este año quiero crear una página web que pueda compartir con mis amigos y mi familia.</p>
+        </section>
+      </div>
+
+      <footer>Mi primera página con GitHub Pages · 2026</footer>
+    </article>
+  </main>
+</body>
+</html>
+
